@@ -46,3 +46,22 @@
         </ul>
     </div> -->
   </div>
+
+
+  <script type="text/javascript">
+          $(function () {
+              //tab切换
+             //tab切换
+              $('.i_lcxm ul li').click(function () {
+                  var index = $(this).index();
+                  $('.lc_rlist').eq(index).show().addClass('now').siblings().removeClass('now').hide();
+                  $('.i_lcxm ul li').eq(index).addClass('now').siblings().removeClass('now');
+              });
+              //tab切换
+              $('.i_newsr dl dd').click(function () {
+                  var index = $(this).index();
+                  $('.i_newslistbox').eq(index).show().addClass('now').siblings().removeClass('now').hide();
+                  $('.i_newsr dl dd').eq(index).addClass('now').siblings().removeClass('now');
+              });
+          });
+  </script>
